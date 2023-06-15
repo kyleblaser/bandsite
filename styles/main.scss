@@ -149,7 +149,6 @@ $column-width: 45%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-grow: 1;
   }
   &__social {
     width: 20px;
@@ -168,15 +167,14 @@ $column-width: 45%;
     flex-direction: row;
   }
 
-  &__contact-id {
+  &__id {
     width: 16rem;
     margin: 2rem;
-    background-color: red;
 
-    &__name {
+    &-name {
       margin-bottom: 0;
     }
-    &__company {
+    &-company {
       margin-bottom: 1rem;
     }
   }

@@ -158,7 +158,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-grow: 1;
 }
 .info__social {
   width: 20px;
@@ -177,14 +176,13 @@
     flex-direction: row;
   }
 }
-.contact__contact-id {
+.contact__id {
   width: 16rem;
   margin: 2rem;
-  background-color: red;
 }
-.contact__contact-id__name {
+.contact__id-name {
   margin-bottom: 0;
 }
-.contact__contact-id__company {
+.contact__id-company {
   margin-bottom: 1rem;
 }/*# sourceMappingURL=main.css.map */

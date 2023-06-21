@@ -98,6 +98,7 @@
 .text-container__item {
   width: 45%;
   width: 30%;
+  margin: 0 10%;
 }
 
 .gallery {
@@ -185,4 +186,93 @@
 }
 .contact__id-company {
   margin-bottom: 1rem;
+}
+
+#commentForm label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.comments {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.comments__section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 80%;
+  text-align: center;
+}
+.comments__section h1 {
+  text-align: left;
+}
+.comments__section #commentSection {
+  display: flex;
+  align-items: flex-start;
+}
+.comments__section .profile-picture {
+  flex-shrink: 0;
+  margin-right: 10px; /* Adjust the margin value as needed */
+}
+.comments__section .profile-picture img {
+  width: 50px; /* Adjust the size of the profile picture */
+  height: 50px;
+  border-radius: 50%;
+}
+.comments__section form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-grow: 1;
+}
+.comments__section .form-group {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.comments__section label {
+  display: block;
+  text-align: left;
+}
+.comments__section input,
+.comments__section textarea {
+  width: 100%;
+}
+.comments__section button {
+  align-self: flex-start;
+}
+.comments__section .comment-container {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  border-top: 1px solid #ccc;
+  padding-top: 0.5rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+.comments__section .comment-container .profile-picture {
+  margin-right: 1rem;
+}
+.comments__section .comment-container .comment-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.comments__section .comment-container .comment-content .comment-name {
+  font-weight: bold;
+  margin-right: auto;
+}
+.comments__section .comment-container .comment-content .comment-date {
+  margin-left: auto;
+}
+.comments__section .comment-container .comment-text {
+  margin-top: 0.5rem;
+}
+
+#commentList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 1rem;
 }/*# sourceMappingURL=main.css.map */

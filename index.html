@@ -133,6 +133,49 @@
           />
         </div>
       </section>
+
+      <!-------------->
+      <!-- COMMENTS-->
+      <!-------------->
+      <section class="comments">
+        <div class="comments__section">
+          <h1>Join the Conversation</h1>
+          <div id="commentSection">
+            <div class="profile-picture">
+              <img
+                src="./assets/images/Mohan-muruge.jpg"
+                alt="Profile Picture"
+              />
+            </div>
+            <form id="commentForm">
+              <div class="form-group">
+                <label for="nameInput">NAME</label>
+                <input
+                  type="text"
+                  id="nameInput"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="commentInput">COMMENT</label>
+                <textarea
+                  id="commentInput"
+                  placeholder="Add a new comment"
+                  required
+                  rows="5"
+                  cols="70"
+                ></textarea>
+              </div>
+              <button type="submit">Comment</button>
+            </form>
+          </div>
+
+          <h2>Comments</h2>
+          <div id="commentList"></div>
+        </div>
+      </section>
+
       <!----------------->
       <!-- Footer -->
       <!----------------->
@@ -183,6 +226,7 @@
           </div>
 
           <h2>Copyright The Bees Knees © 2021 All Rights Reserved</h2>
+          <script src="./script.js"></script>
         </div>
       </footer>
     </main>

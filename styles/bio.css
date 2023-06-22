@@ -19,7 +19,6 @@
 }
 .title-box {
   display: flex;
-  position: fixed;
   top: 0;
   left: 0;
   flex-direction: column;
@@ -95,10 +94,28 @@
   display: flex;
   justify-content: center;
 }
-.text-container__item {
-  width: 45%;
-  width: 30%;
-  margin: 0 10%;
+@media screen and (max-width: 767px) {
+  .text-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .text-container {
+    margin: 0 10%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .text-container__item {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .text-container__item {
+    width: 30%;
+    margin: 0 5%;
+  }
 }
 
 .gallery {
@@ -123,7 +140,7 @@
   flex-wrap: wrap;
   justify-content: center;
   max-width: 100%;
-  margin: 0 -1rem;
+  margin: 0;
 }
 .gallery__img {
   width: 33.3333333333%;
@@ -144,6 +161,7 @@
   display: flex;
   background-color: #323232;
   color: #ffffff;
+  flex-direction: column;
 }
 .info__start {
   display: flex;
@@ -171,6 +189,7 @@
   justify-content: space-between;
   width: 100%;
   margin-bottom: 4rem;
+  flex-direction: column;
 }
 @media screen and (min-width: 768px) {
   .contact {
@@ -214,10 +233,10 @@
 }
 .comments__section .profile-picture {
   flex-shrink: 0;
-  margin-right: 10px; /* Adjust the margin value as needed */
+  margin-right: 10px;
 }
 .comments__section .profile-picture img {
-  width: 50px; /* Adjust the size of the profile picture */
+  width: 50px;
   height: 50px;
   border-radius: 50%;
 }
@@ -275,4 +294,4 @@
   flex-direction: column;
   align-items: flex-start;
   margin-top: 1rem;
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=bio.css.map */

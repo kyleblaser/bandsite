@@ -1,0 +1,77 @@
+/** @format */
+
+@import "./partials/mixins";
+.shows {
+  display: flex;
+  align-items: flex-start;
+  background-image: url(../assets/images/hero-shows.jpg);
+  height: 50vh;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 2rem;
+
+  &__title {
+    color: $white;
+    text-align: left;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+  }
+
+  &__subtitle {
+    color: $white;
+    text-align: left;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.showdate {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-top: 1px solid $silver;
+  border-bottom: 1px solid $silver;
+
+  &__label {
+    justify-content: flex-start;
+    color: $silver;
+  }
+
+  &__date,
+  &__venue,
+  &__location {
+    justify-content: flex-start;
+  }
+
+  &__button {
+    width: 90%;
+    align-self: center;
+    background-color: $darkblack;
+    color: $white;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+  }
+
+  @include tablet {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+
+    &__label,
+    &__date,
+    &__venue,
+    &__location {
+      margin: 5px;
+    }
+    &__button {
+      margin: 5px;
+      width: 10%;
+    }
+
+    &__label {
+      align-self: flex-start;
+    }
+  }
+}

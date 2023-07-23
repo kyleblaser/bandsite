@@ -2,21 +2,26 @@
 @font-face {
   font-family: "AvenirNext";
   src: local("Avenir Next Regular");
-  src: url("../4.0 - Assets/_Global Font/AvenirNextProLT/Linotype - AvenirNextLTPro-Regular.otf") format("opentype");
+  src: url("/assets/fonts/AvenirNextLTPro-Regular.otf") format("opentype");
   font-weight: 400;
 }
 @font-face {
   font-family: "AvenirNext";
   src: local("Avenir Next Demi Bold");
-  src: url("../4.0 - Assets/_Global Font/AvenirNextProLT/Linotype - AvenirNextLTPro-Demi.otf") format("opentype");
+  src: url("/assets/fonts/AvenirNextLTPro-Bold.otf") format("opentype");
   font-weight: 600;
 }
 @font-face {
   font-family: "AvenirNext";
   src: local("Avenir Next Bold");
-  src: url("../4.0 - Assets/_Global Font/AvenirNextProLT/Linotype - AvenirNextLTPro-Bold.otf") format("opentype");
+  src: url("/assets/fonts/AvenirNextLTPro-Bold.otf") format("opentype");
   font-weight: 700;
 }
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .title-box {
   display: flex;
   top: 0;
@@ -62,13 +67,23 @@
   align-items: center;
   background-image: url(../assets/images/hero-bio.jpg);
   background-size: cover;
-  height: 50vh;
+  height: 20vh;
 }
 .hero__title {
   color: #ffffff;
   text-align: left;
-  font-size: 5rem;
-  margin-left: 2rem;
+  font-size: 4rem;
+  margin-left: 5rem;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 10rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 60vh;
+  }
 }
 
 .about {
@@ -83,7 +98,7 @@
 }
 @media screen and (min-width: 1200px) {
   .about {
-    padding: 0 9.365rem;
+    padding: 0 9.5rem;
   }
 }
 .about__title {
@@ -264,7 +279,6 @@
 .comments__section .comment-container {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 1rem;
   border-top: 1px solid #ccc;
   padding-top: 0.5rem;
   border-bottom: 1px solid #ccc;

@@ -85,60 +85,7 @@
       <!--SHOWS-->
       <section>
         <h2>Shows</h2>
-        <div class="showdate">
-          <p class="showdate__label">DATE</p>
-          <h3 class="showdate__date">Mon Sept 06 2021</h3>
-          <p class="showdate__label">VENUE</p>
-          <h3 class="showdate__venue">Ronald Lane</h3>
-          <p class="showdate__label">LOCATION</p>
-          <h3 class="showdate__location">San Francisco, CA</h3>
-          <button class="showdate__button">BUY TICKETS</button>
-        </div>
-        <div class="showdate">
-          <p class="showdate__label">DATE</p>
-          <h3 class="showdate__date">Tues Sept 21 2021</h3>
-          <p class="showdate__label">VENUE</p>
-          <h3 class="showdate__venue">Pier 3 East</h3>
-          <p class="showdate__label">LOCATION</p>
-          <h3 class="showdate__location">San Francisco, CA</h3>
-          <button class="showdate__button">BUY TICKETS</button>
-        </div>
-        <div class="showdate">
-          <p class="showdate__label">DATE</p>
-          <h3 class="showdate__date">Fri Oct 15 2021</h3>
-          <p class="showdate__label">VENUE</p>
-          <h3 class="showdate__venue">View Lounge</h3>
-          <p class="showdate__label">LOCATION</p>
-          <h3 class="showdate__location">San Francisco, CA</h3>
-          <button class="showdate__button">BUY TICKETS</button>
-        </div>
-        <div class="showdate">
-          <p class="showdate__label">DATE</p>
-          <h3 class="showdate__date">Sat Nov 06 2021</h3>
-          <p class="showdate__label">VENUE</p>
-          <h3 class="showdate__venue">Hyatt Agency</h3>
-          <p class="showdate__label">LOCATION</p>
-          <h3 class="showdate__location">San Francisco, CA</h3>
-          <button class="showdate__button">BUY TICKETS</button>
-        </div>
-        <div class="showdate">
-          <p class="showdate__label">DATE</p>
-          <h3 class="showdate__date">Fri Nov 26 2021</h3>
-          <p class="showdate__label">VENUE</p>
-          <h3 class="showdate__venue">Moscow Center</h3>
-          <p class="showdate__label">LOCATION</p>
-          <h3 class="showdate__location">San Francisco, CA</h3>
-          <button class="showdate__button">BUY TICKETS</button>
-        </div>
-        <div class="showdate">
-          <p class="showdate__label">DATE</p>
-          <h3 class="showdate__date">Wed Dec 15 2021</h3>
-          <p class="showdate__label">VENUE</p>
-          <h3 class="showdate__venue">Press Club</h3>
-          <p class="showdate__label">LOCATION</p>
-          <h3 class="showdate__location">San Francisco, CA</h3>
-          <button class="showdate__button">BUY TICKETS</button>
-        </div>
+        <div id="showDatesContainer"></div>
       </section>
       <!--footer-->
       <!--footer-->
@@ -190,7 +137,10 @@
           </div>
 
           <h2>Copyright The Bees Knees © 2021 All Rights Reserved</h2>
-          <script src=".//scripts/index-page.js"></script>
+          <script src="../scripts/build-shows-page.js"></script>
+          <script sec="
+            https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+          </script>
         </div>
       </footer>
     </main>
